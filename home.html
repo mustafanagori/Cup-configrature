@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conatiner">
+        <div class="iframe-conatiner">
+        <iframe id="app" src="https://playcanv.as/e/p/WZ2fvacO/" style="width: 100%;" frameborder="0"></iframe>
+        </div>
+
+        <aside>
+            <!-- heading -->
+                <h1>CUP CONFIGRATOR</h1>
+                <!-- text box -->
+                <center>
+                    <label for="#input">
+                        <span>Enter text</span>
+                        <input type="text" placeholder="Text Here" id="input" class="textbox">
+                        <input type="submit" class="btn">
+                    </label>
+                </center>
+                <br>
+
+                <!-- selector -->
+                <div style="display: flex;justify-content: center; " class="opt">
+                    <label >
+                        <span>Body</span>
+                        <input type="checkbox" id="body" class="select">
+                        <br><br><br>
+                    </label>
+                    <label >
+                        <span>Handle</span>
+                        <input type="checkbox" id="handle" class="select">
+                        <br><br><br>
+                    </label>
+                    <label>
+                        <span>Rim</span>
+                        <input type="checkbox" id="rim" class="select">
+                        <br><br><br>
+                    </label>
+                    <label>
+                        <span>Inner</span>
+                        <input type="checkbox" id="inner" class="select">
+                        <br><br><br>
+                    </label>
+                </div>
+                
+                <div class="color_container">
+                    <!-- <div class="color" style="background-color: green;"></div>
+                    <div class="color" style="background-color: gray;"></div>
+                    <div class="color" style="background-color: blue;" ></div>
+                    <div class="color" style="background-color: purple;" ></div> -->
+                </div>
+                <br>
+                <!-- background -->
+                <span style="margin: 40px;">Background</span>
+                <br>
+                <div class="bgcolor" >
+                    <input value="" type="color" id="camera" style="width: 300px; margin: 20px;">
+                </div>
+                <br>
+
+                <!-- animation -->
+                <div style="display: flex;">
+                    <label>
+                        <span style="margin: 20px;">Reverse</span>
+                        <input type="checkbox" id="reverse" class="rotate_reverse">
+                        <br><br><br>
+                    </label>
+    
+                    <label>
+                        <span style="margin: 20px;">Animate</span>
+                        <input type="checkbox" id="animate" class="rotate_animate">
+                        <br><br><br>
+                    </label>
+    
+                </div>
+                <br>
+                <!-- speed  -->
+                <div style="margin-left: 20px;">
+                    <span>Animated speed</span>
+                    <input type="range" min="0" max="200" value="50" id="speed" class="range">
+                    <span id="txt"></span>
+                </div>
+                <br>
+                <!-- post and angle -->
+                <div style="display: flex;  
+                
+                " >
+
+                    <label>
+                        <span >45<sup>0</sup></span>
+                        <input type="checkbox" id=""  >
+                    </label>
+                    
+                    <label>
+                        <span >90<sup>0</sup></span>
+                    <input type="checkbox" id="" >
+
+                    <label>
+                        <span >180<sup>0</sup></span>
+                        <input type="checkbox" id="" >
+                    </label>
+                    
+                    <label>
+                        <span >360<sup>0</sup></span>
+                    <input type="checkbox" id="" >
+
+                    </label>
+            
+                </div>
+
+    
+        </aside>
+    </div>
+</body>
+
+    <!--  JQuery CDN  -->
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.js"
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"
+    ></script>
+
+<script src="app.js"></script>
+
+</html>
